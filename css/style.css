@@ -26,16 +26,22 @@ body.dark-mode{
 
 .header-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   background: url('/gifs/building.gif') ;
   height: 300px;
   }
+.horizontal-placements{
+  display: flex;
+  align-items: center;
+}
 .text-header-container{
   background-color: #282b30;
   width: 500px;
   border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .75);
 }
 .weather-text-header{
   margin: 0;
@@ -43,6 +49,10 @@ body.dark-mode{
   text-align: center;
   font-size: 50px;
   color: white;
+}
+.current-location{
+color: white;
+
 }
 .dark-mode-icon {
   width: 50px;
@@ -55,6 +65,8 @@ body.dark-mode{
   background-color: transparent;
   padding: 0;
   margin: 0;
+  align-items: baseline;
+
 }
 
 
