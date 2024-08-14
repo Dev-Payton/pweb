@@ -1,19 +1,64 @@
 
-
-html {
+html, body {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  height: 100%;
+}
+body{
+  background-color: #1e2124;
+  font-family: 'gg sans', sans-serif;
 }
 
-.menu {
-  color: blue;
+
+.page-wrapper{
+
+  min-height: 100%;
   display: flex;
-  margin: auto;
-  width: 50%;
-  align-items: center;
+  flex-direction: column;
 }
-.wrapper {
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #36393e;
+  height: 75px;
+
+  }
+.weather-text-header{
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+.dark-mode-icon {
+  width: 50px;
+  height: 50px;
+  background-image: url('/icons/darkmode.png');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+
+.weather-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+
+}
+
+.row {
+  background-color: ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,17 +66,29 @@ html {
 }
 
 .box{
+
   background-color: #333;
+  font-size: 25px;
   color: white;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
   flex: 1;
   max-width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .75);
 }
-.wrapper > div {
-  flex: 1;
+
+
+footer{
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: white;
+  margin-top: auto; /* Push the footer to the bottom if content is less */
 }
+
+
 
 .weather_textbox{
   display: flex;
@@ -43,9 +100,18 @@ html {
 
 }
 
-.weather_header{
-  text-align: center;
-  font-size: 50px;
+
+.wrapper > div {
+  flex: 1;
+}
+
+
+.menu {
+  color: blue;
+  display: flex;
+  margin: auto;
+  width: 50%;
+  align-items: center;
 }
 
 

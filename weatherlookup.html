@@ -1,30 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head >
+<head>
   <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <title>WeatherLookup</title>
+  <link rel="icon" href="/icons/weatherfav.png" sizes="any">
+
+  <style>
+    @font-face {
+      font-family: 'gg sans';
+      src: url('/fonts/ggsansbold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'gg sans';
+      src: url('/fonts/ggsansmed.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'gg sans';
+      src: url('/fonts/ggsansreg.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'gg sans';
+      src: url('/fonts/ggsanssemibold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+
 </head>
-<body style="background-color: black">
-<header class="weather_header">
-  <h1 class="weather_header" style="color: white" >Weather Calls</h1>
-</header>
+<body>
+<div class="page-wrapper">
 
-<div class="weather_textbox">
-  <input type="text" id="userInput" placeholder="Enter a Zip Code">
-  <button onclick="handleInput()">Submit</button>
+  <header>
+    <div class="header-container">
+      <h1 class="weather-text-header" style="color: white">Weather Calls</h1>
+      <button class="dark-mode-icon" onclick="toggleDarkMode()"></button>
+    </div>
+  </header>
+  <div class="weather_textbox">
+    <input type="text" id="userInput" placeholder="Enter a Zip Code">
+    <button onclick="handleInput()">Submit</button>
+  </div>
+
+
+  <div class="weather-content">
+    <div class="row">
+      <div class="box">Current Conditions</div>
+      <div class="box">Forecast</div>
+      <div class="box">Historical Datas</div>
+    </div>
+    <div class="row">
+      <div class="box">Today</div>
+      <div class="box">Ten Day Forecast</div>
+      <div class="box">Historical </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p class="copyright" style="color: white">&copy; 2024 @dev-payton. All rights reserved.</p>
+  </footer>
 </div>
-
-
-
-<div class="wrapper">
-  <div class="box">One</div>
-  <div class="box">Two</div>
-  <div class="box">Three</div>
-</div>
-
-
 <script>
+
+  function toggleDarkMode() {
+
+  }
+
   function handleInput(event) {
     let inputElement = document.getElementById('userInput');
     let inputValue = inputElement.value;
