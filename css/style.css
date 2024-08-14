@@ -6,8 +6,14 @@ html, body {
   height: 100%;
 }
 body{
-  background-color: #1e2124;
+  background-color: #130e29;
+
   font-family: 'gg sans', sans-serif;
+}
+
+body.dark-mode{
+  background-color: #d1d4d9;
+  color: white;
 }
 
 
@@ -23,10 +29,14 @@ body{
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #36393e;
-  height: 75px;
-
+  background: url('/gifs/building.gif') ;
+  height: 300px;
   }
+.text-header-container{
+  background-color: #282b30;
+  width: 500px;
+  border-radius: 12px;
+}
 .weather-text-header{
   margin: 0;
   flex-grow: 1;
@@ -58,7 +68,6 @@ body{
 }
 
 .row {
-  background-color: ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,8 +83,9 @@ body{
   border-radius: 8px;
   text-align: center;
   flex: 1;
-  max-width: 300px;
+  max-width: 400px;
   height: 300px;
+  width: 250px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, .75);
 }
 
