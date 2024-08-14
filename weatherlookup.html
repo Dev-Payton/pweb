@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>WeatherLookup</title>
+</head>
+<body style="background-color: black">
+<header class="weather_header">
+  <h1 class="weather_header" style="color: white" >Weather Calls</h1>
+</header>
+
+<div class="weather_textbox">
+  <input type="text" id="userInput" placeholder="Enter a Zip Code">
+  <button onclick="handleInput()">Submit</button>
+</div>
+
+
+
+<div class="wrapper">
+  <div class="box">One</div>
+  <div class="box">Two</div>
+  <div class="box">Three</div>
+</div>
+
+
+<script>
+  function handleInput(event) {
+    let inputElement = document.getElementById('userInput');
+    let inputValue = inputElement.value;
+    console.log(inputValue);
+  }
+</script>
+</body>
+</html>
